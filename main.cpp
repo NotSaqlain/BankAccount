@@ -6,7 +6,7 @@ using namespace std;
 class BankAccount {
 private:
     string name;
-    int number;
+    int iban;
     int balance = 0;
 
 public:
@@ -16,7 +16,12 @@ public:
 
     BankAccount (string n, int num, int b) {
         name = n;
-        number = num;
+        iban = num;
         balance = b;
+    }
+
+    void display() {
+        cout << "NAME: " << name << endl;
+        cout << "IBAN: " << iban << endl;
     }
 };
