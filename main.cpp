@@ -24,15 +24,19 @@ public:
         cout << "NAME: " << name << endl;
         cout << "IBAN: " << iban << endl;
         cout << "BALANCE: " << balance << "$" << endl;
+        cout << endl;
     }
 
     int deposit(int n) {
         balance += n;
+        cout << endl;
+        cout << endl;
         return balance;
     }
 
     int withdraw(int n) {
         balance -= n;
+        cout << endl;
         return balance;
     }
 };
