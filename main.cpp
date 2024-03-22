@@ -5,8 +5,8 @@ using namespace std;
 
 class BankAccount {
 private:
-    string name;
-    int iban;
+    string name = "admin";
+    int iban = 101010;
     int balance = 0;
 
 public:
@@ -23,7 +23,7 @@ public:
     void display() {
         cout << "NAME: " << name << endl;
         cout << "IBAN: " << iban << endl;
-        cout << "BALANCE: " << balance << endl;
+        cout << "BALANCE: " << balance << "$" << endl;
     }
 
     int deposit(int n) {
@@ -43,12 +43,18 @@ int main() {
     bool end = false;
     int ans;
 
+    BankAccount account("saq", 109826, 100);
+
     cout << "Welcome to nathional bank" << endl;
 
     do {
         cout << "Select: " << endl;
-        cout << "1) Show info. \n"
-                " 2) Deposit. << \n"
-                " 3) Withdraw." << endl;
+        cout << "1) Show info. \n2) Deposit. \n3) Withdraw.\n 4) Exit" << endl;
+        
+        cin >> ans;
+        if (ans == 1){
+            account.display();
+        }
+
     } while (!end);
 }
