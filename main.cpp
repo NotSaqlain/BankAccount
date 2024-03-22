@@ -42,6 +42,7 @@ public:
 int main() {
     bool end = false;
     int ans;
+    int temp;
 
     BankAccount account("saq", 109826, 100);
 
@@ -54,6 +55,16 @@ int main() {
         cin >> ans;
         if (ans == 1){
             account.display();
+        } else if (ans == 2) {
+            cout << "input: ";
+            cin >> temp;
+            cout << "new balance: " << account.deposit(temp);
+        } else if (ans == 3) {
+            cout << "input: ";
+            cin >> temp;
+            cout << "new balance: " << account.withdraw(temp);
+        } else if (ans == 4) {
+            end = true;
         }
 
     } while (!end);
