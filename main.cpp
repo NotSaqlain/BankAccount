@@ -28,13 +28,11 @@ public:
 
     int deposit(int n) {
         balance += n;
-        cout << "success";
         return balance;
     }
 
     int withdraw(int n) {
         balance -= n;
-        cout << "success";
         return balance;
     }
 };
@@ -46,11 +44,11 @@ int main() {
 
     BankAccount account("saq", 109826, 100);
 
-    cout << "Welcome to nathional bank" << endl;
+    cout << "Welcome to nathional bank\n" << endl;
 
     do {
         cout << "Select: " << endl;
-        cout << "1) Show info. \n2) Deposit. \n3) Withdraw. \n4) Exit \n: " << endl;
+        cout << "1) Show info. \n2) Deposit. \n3) Withdraw. \n4) Exit \n\n: ";
         
         cin >> ans;
         if (ans == 1){
