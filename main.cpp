@@ -23,5 +23,18 @@ public:
     void display() {
         cout << "NAME: " << name << endl;
         cout << "IBAN: " << iban << endl;
+        cout << "BALANCE: " << balance << endl;
+    }
+
+    int deposit(int n) {
+        balance += n;
+        cout << "success";
+        return balance;
+    }
+
+    int withdraw(int n) {
+        balance -= n;
+        cout << "success";
+        return balance;
     }
 };
