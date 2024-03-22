@@ -38,10 +38,10 @@ public:
         if (balance - n > 0) {
             balance -= n;
             cout << endl;
-            return balance;
         } else {
             cout << "not enough balance" << endl;
         }
+    return balance;
     }
 };
 
