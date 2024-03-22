@@ -38,3 +38,17 @@ public:
         return balance;
     }
 };
+
+int main() {
+    bool end = false;
+    int ans;
+
+    cout << "Welcome to nathional bank" << endl;
+
+    do {
+        cout << "Select: " << endl;
+        cout << "1) Show info. \n"
+                " 2) Deposit. << \n"
+                " 3) Withdraw." << endl;
+    } while (!end);
+}
