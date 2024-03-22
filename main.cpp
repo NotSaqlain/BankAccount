@@ -50,9 +50,9 @@ int main() {
     int ans;
     int temp;
 
-    BankAccount account("saq", 109826, 100);
+    BankAccount account("Saqlain", 109826, 100);
 
-    cout << "Welcome to nathional bank\n" << endl;
+    cout << "Welcome to national bank\n" << endl;
 
     do {
         cout << "Select: " << endl;
