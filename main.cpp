@@ -50,7 +50,7 @@ int main() {
 
     do {
         cout << "Select: " << endl;
-        cout << "1) Show info. \n2) Deposit. \n3) Withdraw.\n 4) Exit" << endl;
+        cout << "1) Show info. \n2) Deposit. \n3) Withdraw. \n4) Exit \n: " << endl;
         
         cin >> ans;
         if (ans == 1){
